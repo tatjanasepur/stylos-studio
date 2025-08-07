@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kupatilo | Stylos Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Stylos Studio</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="projekti.html">Projekti</a></li>
+      <li><a href="kuhinje.html">Kuhinje</a></li>
+      <li><a href="spavace.html">Spavaće sobe</a></li>
+      <li><a href="dnevni.html">Dnevni boravak</a></li>
+      <li><a href="trpezarija.html">Trpezarija</a></li>
+      <li><a href="kupatilo.html" class="active">Kupatilo</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="category-section">
+    <h1>Kupatilo</h1>
+    <ul class="subcategories">
+      <li><a href="#">Ormarići za umivaonik</a></li>
+      <li><a href="#">Ogledala</a></li>
+      <li><a href="#">Police i ostava</a></li>
+    </ul>
+
+    <div class="inquiry-form">
+      <h2>Pošaljite upit za kupatilo</h2>
+      <form>
+        <label for="name">Ime i prezime</label><br/>
+        <input type="text" id="name" name="name" required /><br/>
+        <label for="email">Email</label><br/>
+        <input type="email" id="email" name="email" required /><br/>
+        <label for="item-type">Izaberite proizvod</label><br/>
+        <select id="item-type" name="item-type" required>
+          <option value="" disabled selected>Izaberite</option>
+          <option value="ormaric">Ormarić za umivaonik</option>
+          <option value="ogledalo">Ogledalo</option>
+          <option value="police">Police i ostava</option>
+        </select><br/>
+        <label for="message">Poruka</label><br/>
+        <textarea id="message" name="message" rows="4"></textarea><br/>
+        <button type="submit">Pošalji upit</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Stylos Studio. Sva prava zadržana.</p>
+</footer>
+</body>
+</html>
