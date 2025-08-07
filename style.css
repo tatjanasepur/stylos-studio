@@ -82,7 +82,7 @@ nav li a:hover {
 
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 58%; /* blago spušteno sa 50% na 58% */
   left: 10%;
   transform: translateY(-50%);
   max-width: 600px;
@@ -97,7 +97,7 @@ nav li a:hover {
 }
 
 .hero-text h1 {
-  margin-bottom: 20px;
+  margin-bottom: 35px; /* povećan razmak ispod naslova */
 }
 
 .hero-text .subtitle {
@@ -223,16 +223,4 @@ footer {
   .hero-text {
     position: static;
     transform: none;
-    background-color: transparent;
-    color: #3e2f1c;
-    margin: 20px 15px 40px 15px;
-    padding: 0;
-    font-size: 1.1rem;
-    box-shadow: none;
-    max-width: 100%;
-  }
-
-  .hero img {
-    height: auto;
-  }
-}
+    background-color: transp
