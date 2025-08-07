@@ -9,25 +9,25 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f7f5f0;
-  color: #2a2a2a;
+  color: #000000;
   line-height: 1.6;
   font-size: 16px;
 }
 
 /* Links */
 a {
-  color: #7eaa5a;
+  color: #66bb00;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #5f8b42;
+  color: #4b8c00;
 }
 
 /* Header */
 header {
-  background-color: #a6c48a;
+  background-color: #66bb00;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,16 +64,16 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #7eaa5a;
+  background-color: #66bb00;
   color: #ffffff;
 }
 
 /* Hero Section */
 .hero {
   padding: 120px 30px 80px;
-  background: linear-gradient(135deg, #cbe5b4 0%, #a6c48a 100%);
+  background: linear-gradient(135deg, #a4e500 0%, #66bb00 100%);
   text-align: center;
-  color: #2a2a2a;
+  color: #000000;
   font-family: 'Playfair Display', serif;
 }
 
@@ -81,7 +81,6 @@ nav ul li a:hover {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #000000;
 }
 
 .hero-text .subtitle {
@@ -110,23 +109,24 @@ h2 {
   font-size: 2rem;
   margin-bottom: 25px;
   color: #000000;
-  border-bottom: 3px solid #a6c48a;
+  border-bottom: 3px solid #66bb00;
   padding-bottom: 10px;
 }
 
-/* About */
-.about p {
+/* About & Contact */
+.about p,
+.contact-preview p {
   font-size: 1.15rem;
   max-width: 720px;
   margin-bottom: 40px;
-  color: #333333;
+  color: #111111;
 }
 
 /* Services */
 .services ul {
   list-style-type: square;
   padding-left: 20px;
-  color: #333333;
+  color: #111111;
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 50px;
@@ -145,14 +145,14 @@ h2 {
   border-radius: 15px;
   padding: 30px 35px;
   width: 32%;
-  box-shadow: 0 6px 12px rgba(126, 170, 90, 0.2);
+  box-shadow: 0 6px 12px rgba(102, 187, 0, 0.2);
   transition: transform 0.3s ease;
   cursor: default;
 }
 
 .project-card:hover {
   transform: translateY(-7px);
-  box-shadow: 0 12px 25px rgba(126, 170, 90, 0.35);
+  box-shadow: 0 12px 25px rgba(102, 187, 0, 0.35);
 }
 
 .project-card h3 {
@@ -164,26 +164,18 @@ h2 {
 
 .project-card p {
   font-size: 1rem;
-  color: #333333;
+  color: #111111;
   line-height: 1.4;
 }
 
-/* Contact preview */
-.contact-preview p {
-  font-size: 1.15rem;
-  max-width: 700px;
-  margin-bottom: 20px;
-  color: #333333;
-}
-
 .contact-preview a {
-  color: #7eaa5a;
+  color: #66bb00;
   font-weight: 600;
 }
 
 /* Footer */
 footer {
-  background-color: #a6c48a;
+  background-color: #66bb00;
   color: #000000;
   text-align: center;
   padding: 25px 0;
