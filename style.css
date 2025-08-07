@@ -10,8 +10,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f9f5f0; /* topao bež ton */
-  color: #3e2f1c; /* tamno braon */
+  background: #f9f5f0;
+  color: #3e2f1c;
   line-height: 1.6;
   font-size: 16px;
 }
@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -32,7 +32,7 @@ header {
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
-  color: #f4e3c1; /* svetlo zlato-bež */
+  color: #f4e3c1;
   letter-spacing: 2px;
   font-weight: 700;
   user-select: none;
@@ -56,7 +56,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #d4b163; /* zlatni ton */
+  background-color: #d4b163;
   color: #3e2f1c;
   box-shadow: 0 0 10px #d4b163aa;
 }
@@ -74,58 +74,35 @@ nav ul li a.active {
   height: 500px;
   object-fit: cover;
   filter: brightness(0.65);
-  transition: transform 0.5s ease;
-}
-
-.hero:hover img {
-  transform: scale(1.05);
 }
 
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 12%;
+  left: 10%;
   transform: translateY(-50%);
   max-width: 600px;
-  background-color: rgba(92, 67, 38, 0.75);
+  background-color: rgba(92, 67, 38, 0.8);
   color: #f9f5f0;
   padding: 30px 40px;
   border-radius: 12px;
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   box-shadow: 0 0 20px #d4b163cc;
+  line-height: 1.4;
 }
 
-/* Sekcija O nama */
-.about {
-  max-width: 900px;
-  margin: 0 auto 60px;
-  padding: 0 30px;
-  font-size: 1.15rem;
-  color: #5e4a29;
-}
-
-.about h2 {
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #5a4329;
-  letter-spacing: 1.5px;
-}
-
-/* Projekti i ostale kategorije */
-.projects-section,
-.category-section,
-.contact-section {
+/* Sekcije */
+main section {
   max-width: 900px;
   margin: 0 auto 60px;
   padding: 0 30px;
 }
 
-.projects-section h1,
-.category-section h1,
-.contact-section h1 {
+.about h2,
+.services h2,
+.projects-preview h2,
+.contact-preview h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 2rem;
@@ -134,23 +111,41 @@ nav ul li a.active {
   letter-spacing: 1.2px;
 }
 
-.project-list {
+.about p,
+.services ul,
+.projects-preview .project-cards,
+.contact-preview p {
+  color: #5e4a29;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Usluge kao lista */
+.services ul {
+  list-style: inside disc;
+  margin-left: 15px;
+}
+
+/* Projekti kartice */
+.project-cards {
   display: flex;
-  flex-direction: column;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-card {
   background: #f3ede1;
-  padding: 20px 30px;
+  flex: 1 1 28%;
+  padding: 20px 25px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgb(0 0 0 / 0.07);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
   border-left: 5px solid #d4b163;
+  transition: box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
@@ -163,91 +158,11 @@ nav ul li a.active {
   color: #6a5732;
 }
 
-/* Linkovi podkategorija */
-.subcategories {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  gap: 25px;
-  margin-bottom: 40px;
-}
-
-.subcategories li a {
-  text-decoration: none;
-  font-weight: 600;
-  padding: 10px 18px;
-  background-color: #f3ede1;
-  color: #5e4a29;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
-}
-
-.subcategories li a:hover {
-  background-color: #d4b163;
-  color: #3e2f1c;
-  box-shadow: 0 0 12px #d4b163cc;
-}
-
-/* Formulari */
-form {
-  background: #f3ede1;
-  padding: 25px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
-  max-width: 600px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
+/* Link u kontakt preview */
+.contact-preview a {
   color: #5a4329;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form select,
-form textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 20px;
-  border: 1.8px solid #d4b163;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  color: #3e2f1c;
-  transition: border-color 0.3s ease;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="tel"]:focus,
-form select:focus,
-form textarea:focus {
-  outline: none;
-  border-color: #a6833d;
-  box-shadow: 0 0 8px #d4b163cc;
-}
-
-form button {
-  background-color: #d4b163;
-  border: none;
-  padding: 14px 30px;
-  font-weight: 700;
-  color: #3e2f1c;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
-
-form button:hover {
-  background-color: #a6833d;
-  color: #f9f5f0;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* Footer */
@@ -277,6 +192,11 @@ footer {
     position: static;
     transform: none;
     background-color: transparent;
+    color: #3e2f1
+  .hero-text {
+    position: static;
+    transform: none;
+    background-color: transparent;
     color: #3e2f1c;
     margin: 20px 15px;
     padding: 0;
@@ -284,12 +204,15 @@ footer {
     box-shadow: none;
   }
 
-  .project-list,
-  .subcategories {
+  .hero img {
+    height: auto;
+  }
+
+  .project-cards {
     flex-direction: column;
   }
 
-  form {
-    max-width: 100%;
+  .project-card {
+    flex: 1 1 100%;
   }
 }
