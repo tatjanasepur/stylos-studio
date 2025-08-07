@@ -26,14 +26,12 @@
 </header>
 
 <main>
-
   <section class="hero" aria-label="Glavna sekcija">
     <img src="img/hero-wood.jpg" alt="Elegantni drveni enterijer Stylos Studio" />
     <div class="hero-text">
       <h1>Stylos Studio</h1>
-      <p class="subtitle">Poslujemo od 12. maja 2022. godine</p>
+      <p>Poslujemo od 12. maja 2022. godine</p>
       <p>Luksuzni enterijer i nameštaj po meri za vaš dom i poslovni prostor</p>
-      <a href="kontakt.html" class="btn-primary">Pošaljite upit</a>
     </div>
   </section>
 
@@ -47,32 +45,14 @@
 
   <section class="services">
     <h2>Naše usluge</h2>
-    <div class="services-grid">
-      <article class="service-card">
-        <h3>Dizajn enterijera</h3>
-        <p>Kompletna oprema i kreativna rešenja za jedinstvene prostore.</p>
-      </article>
-      <article class="service-card">
-        <h3>Kuhinje po meri</h3>
-        <p>Funkcionalne i estetske kuhinje kreirane baš po vašim željama.</p>
-      </article>
-      <article class="service-card">
-        <h3>Spavaće sobe</h3>
-        <p>Elegantan i udoban nameštaj za savršen kutak za odmor.</p>
-      </article>
-      <article class="service-card">
-        <h3>Dnevni boravak i trpezarija</h3>
-        <p>Prostor za druženje i uživanje sa vrhunskim dizajnom.</p>
-      </article>
-      <article class="service-card">
-        <h3>Kupatilski nameštaj</h3>
-        <p>Praktična i moderna rešenja za kupatila.</p>
-      </article>
-      <article class="service-card">
-        <h3>Radni stolovi i kancelarija</h3>
-        <p>Estetski i ergonomski radni prostori po meri.</p>
-      </article>
-    </div>
+    <ul>
+      <li>Dizajn enterijera i kompletna oprema</li>
+      <li>Kuhinje po meri</li>
+      <li>Spavaće sobe i garderoberi</li>
+      <li>Dnevni boravak i trpezarija</li>
+      <li>Kupatilski nameštaj</li>
+      <li>Radni i kancelarijski stolovi</li>
+    </ul>
   </section>
 
   <section class="projects-preview">
@@ -93,48 +73,15 @@
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>Šta kažu naši klijenti</h2>
-    <div class="testimonial-cards">
-      <blockquote>
-        <p>"Stylos Studio je transformisao naš dom! Svaka soba odiše luksuzom i funkcionalnošću."</p>
-        <cite>- Jelena M.</cite>
-      </blockquote>
-      <blockquote>
-        <p>"Odlična saradnja i besprekorno izrađen nameštaj. Top preporuka za sve koji žele kvalitet."</p>
-        <cite>- Marko P.</cite>
-      </blockquote>
-      <blockquote>
-        <p>"Precizan dizajn, vrhunski materijali i ljubaznost. Stylos Studio je pravi izbor."</p>
-        <cite>- Ivana T.</cite>
-      </blockquote>
-    </div>
-  </section>
-
   <section class="contact-preview">
-    <h2>Kontaktirajte nas</h2>
-    <p>Za sve upite i konsultacije, posetite <a href="kontakt.html">stranicu Kontakt</a> ili kliknite na dugme ispod.</p>
-    <a href="kontakt.html" class="btn-primary">Pošaljite upit</a>
+    <h2>Kontakt</h2>
+    <p>Za upite i konsultacije posetite <a href="kontakt.html">Kontakt stranicu</a>.</p>
   </section>
-
 </main>
 
 <footer>
   <p>© 2025 Stylos Studio. Sva prava zadržana.</p>
 </footer>
 
-<script>
-  // Mala animacija fade-in za hero tekst
-  window.addEventListener('DOMContentLoaded', () => {
-    const heroText = document.querySelector('.hero-text');
-    heroText.style.opacity = 0;
-    heroText.style.transition = 'opacity 1.5s ease-in-out';
-    setTimeout(() => {
-      heroText.style.opacity = 1;
-    }, 100);
-  });
-</script>
-
 </body>
 </html>
-
