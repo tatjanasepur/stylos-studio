@@ -1,226 +1,214 @@
-/* Osnovni reset i fontovi */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body & Font */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f7f3ef;
-  color: #3e2f1c; /* tamno braon */
+  background-color: #f7f5f0;
+  color: #3e352a;
   line-height: 1.6;
+  font-size: 16px;
 }
 
+/* Links */
 a {
-  color: #5c4326;
+  color: #8b6d3c;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline;
+a:hover {
+  color: #5c4727;
 }
 
-/* HEADER */
-
+/* Header */
 header {
-  background-color: #6e5831; /* elegantna braon */
+  background-color: #6b5838;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  color: #f7f3ef;
+  padding: 20px 50px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 2px;
+  color: #f0ede6;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
-nav li a {
+nav ul li a {
   font-weight: 600;
   font-size: 1rem;
-  padding: 8px 12px;
-  border-radius: 6px;
+  color: #f0ede6;
+  padding: 8px 15px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
-nav li a.active,
-nav li a:hover {
-  background-color: #a4b494; /* svetlo zelena */
-  color: #2f3e2f;
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #a99363;
+  color: #3e352a;
 }
 
-/* HERO SECTION */
-
+/* Hero Section */
 .hero {
-  position: relative;
-  max-height: 500px;
-  overflow: hidden;
-  margin-bottom: 60px;
-}
-
-.hero img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  filter: brightness(0.65);
-}
-
-.hero-text {
-  position: absolute;
-  top: 58%; /* blago spušteno sa 50% na 58% */
-  left: 10%;
-  transform: translateY(-50%);
-  max-width: 600px;
-  background-color: rgba(92, 67, 38, 0.8);
-  color: #f9f5f0;
-  padding: 30px 40px;
-  border-radius: 12px;
+  padding: 120px 30px 80px;
+  background: linear-gradient(135deg, #d9cba3 0%, #a99363 100%);
+  text-align: center;
+  color: #3e352a;
   font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  box-shadow: 0 0 20px #d4b163cc;
-  line-height: 1.4;
 }
 
 .hero-text h1 {
-  margin-bottom: 35px; /* povećan razmak ispod naslova */
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hero-text .subtitle {
-  margin-bottom: 15px;
-  font-weight: 400;
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  letter-spacing: 1.2px;
 }
 
-/* MAIN SECTIONS */
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
 
+/* Main Sections */
 main {
   max-width: 1100px;
-  margin: 0 auto 50px auto;
-  padding: 0 20px;
+  margin: 0 auto 60px;
+  padding: 0 25px;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #5c4326;
-  border-bottom: 2px solid #a4b494;
-  padding-bottom: 8px;
+  margin-bottom: 25px;
+  color: #6b5838;
+  border-bottom: 3px solid #a99363;
+  padding-bottom: 10px;
 }
 
-.about p,
-.services ul,
-.contact-preview p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin-bottom: 30px;
+/* About */
+.about p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin-bottom: 40px;
+  color: #5a4d3a;
 }
 
-/* LISTE U USLUGAMA */
-
+/* Services */
 .services ul {
   list-style-type: square;
   padding-left: 20px;
-}
-
-.services li {
-  margin-bottom: 12px;
+  color: #5a4d3a;
+  font-size: 1.1rem;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 
-/* Projekti */
-
+/* Projects */
 .projects-preview .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
   justify-content: space-between;
 }
 
 .project-card {
-  background: #f1efe9;
-  border-radius: 12px;
-  padding: 25px 30px;
-  width: 30%;
-  box-shadow: 0 4px 8px rgb(92 67 38 / 0.2);
+  background: #f3f1ec;
+  border-radius: 15px;
+  padding: 30px 35px;
+  width: 32%;
+  box-shadow: 0 6px 12px rgba(107, 88, 56, 0.2);
   transition: transform 0.3s ease;
   cursor: default;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgb(92 67 38 / 0.3);
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(107, 88, 56, 0.35);
 }
 
 .project-card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: 'Playfair Display', serif;
-  color: #6e5831;
+  color: #6b5838;
+  font-weight: 700;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #4a3c23;
-  line-height: 1.3;
+  color: #5a4d3a;
+  line-height: 1.4;
 }
 
-/* Kontakt preview */
-
+/* Contact preview */
 .contact-preview p {
   font-size: 1.15rem;
+  max-width: 700px;
+  margin-bottom: 20px;
+  color: #5a4d3a;
 }
 
-/* FOOTER */
+.contact-preview a {
+  color: #8b6d3c;
+  font-weight: 600;
+}
 
+/* Footer */
 footer {
-  background-color: #6e5831;
-  color: #f7f3ef;
+  background-color: #6b5838;
+  color: #f0ede6;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1.2px;
-  margin-top: 40px;
+  letter-spacing: 1.1px;
 }
 
-/* RESPONSIVE */
-
+/* Responsive */
 @media (max-width: 900px) {
   .project-card {
     width: 100%;
+  }
+  nav ul {
+    gap: 15px;
   }
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    gap: 15px;
     padding: 15px 20px;
   }
 
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
   }
-
-  .hero-text {
-    position: static;
-    transform: none;
-    background-color: transp
+}
