@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spavaće sobe | Stylos Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Stylos Studio</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="projekti.html">Projekti</a></li>
+      <li><a href="kuhinje.html">Kuhinje</a></li>
+      <li><a href="spavace.html" class="active">Spavaće sobe</a></li>
+      <li><a href="dnevni.html">Dnevni boravak</a></li>
+      <li><a href="trpezarija.html">Trpezarija</a></li>
+      <li><a href="kupatilo.html">Kupatilo</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="category-section">
+    <h1>Spavaće sobe</h1>
+    <ul class="subcategories">
+      <li><a href="#">Bračni kreveti</a></li>
+      <li><a href="#">Dečiji kreveti</a></li>
+      <li><a href="#">Kreveti po meri</a></li>
+    </ul>
+
+    <div class="inquiry-form">
+      <h2>Pošaljite upit za spavaće sobe</h2>
+      <form>
+        <label for="name">Ime i prezime</label><br/>
+        <input type="text" id="name" name="name" required /><br/>
+        <label for="email">Email</label><br/>
+        <input type="email" id="email" name="email" required /><br/>
+        <label for="bed-type">Izaberite tip kreveta</label><br/>
+        <select id="bed-type" name="bed-type" required>
+          <option value="" disabled selected>Izaberite</option>
+          <option value="marriage">Bračni krevet</option>
+          <option value="kids">Dečiji krevet</option>
+         
